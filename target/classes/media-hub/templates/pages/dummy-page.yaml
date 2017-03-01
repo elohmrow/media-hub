@@ -1,0 +1,10 @@
+templateScript: /media-hub/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: media-hub:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: media-hub:components/dummy-component

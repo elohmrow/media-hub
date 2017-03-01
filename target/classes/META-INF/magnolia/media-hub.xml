@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>media-hub</name>
+  <displayName>media-hub Magnolia Module</displayName>
+  <description>${project.description}</description>
+  <version>0.0.1</version>
+  <components>
+    <id>app-media-hub</id>
+  </components>
+  <components>
+    <id>app-media-hub-main</id>
+    <component>
+      <type>info.magnolia.social.main.MediaHubMainSubAppView</type>
+      <implementation>info.magnolia.social.main.MediaHubMainSubAppViewImpl</implementation>
+    </component>
+  </components>
+  <components>
+    <id>app-media-hub-greeter</id>
+    <component>
+      <type>info.magnolia.social.config.MediaHubConfigSubAppView</type>
+      <implementation>info.magnolia.social.config.MediaHubConfigSubAppViewImpl</implementation>
+    </component>
+  </components>
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.5/*</version>
+    </dependency>
+  </dependencies>
+</module>
